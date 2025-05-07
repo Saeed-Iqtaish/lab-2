@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Movies from './pages/Movies';
+import MovieDetails from './pages/MovieDetails';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/movies" element={<Movies/>} />
+            <Route path='/movies/:id' element={<MovieDetails/>}></Route>
           </Routes>
         </main>
         <Footer/>
